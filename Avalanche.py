@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import math
 from math import pi
 from collections import defaultdict
-
+from setting import Iter1,Iter2,mu,L_array,Rnw,KperCell,delta,C_E,C_F
 
 
 ##########################################
@@ -321,16 +321,7 @@ def  is_possible_to_serve(h, k,  k_h, k_h_i, dic_active, dic_silent,nTrans, Buff
 #########################################
 # montocarlo simulation
 
-Iter1 = 50 # number iteration for generating random topology
-Iter2 = 20 # numebr of iteration for generating random cache configuration for each user
-mu =0.2  # normalized cache size at each user
-L_array = np.array([2,5,10,15]) # cache configuration values
 
-Rnw = 450 # a Disk with radius Rwn, this value determine average number of helper in the area
-KperCell= 20 # average number of users in each cell
-delta = 0.2 # a_interf/a_cell
-C_E= 1 # access capacity
-C_F= 30 # fronthaul capacity
 
 output1 = np.zeros([Iter1 * Iter2, len(L_array)])
 
