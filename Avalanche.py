@@ -367,16 +367,7 @@ out1 = np.mean(output1, axis =0)
 
 
 
-print("============================")
-print("Radius of  the area",Rnw)
-print("Avg number of users per cell", KperCell)
-
-print("normalized cache size",mu)
-print("radious of interfernce  divived to radious of the cell",delta)
-print("C_E,C_F",[C_E,C_F])
-
-
-
+print("outputs")
 
 print("L_array (x axis)",L_array)
 print("Avalanch delivery time (y axis)",out1)
